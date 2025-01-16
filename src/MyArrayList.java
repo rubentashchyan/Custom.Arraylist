@@ -30,6 +30,14 @@ public class MyArrayList <T> {
         }
     }
 
+    public void remove(int index){
+        for (int i = 0; i < array.length; i++) {
+            if (index == i){
+                array[i]= null;
+            }
+        }
+    }
+
     public T get(int index) {
         for (int i = 0; i < array.length; i++) {
             if (index == i && index < array.length) {
