@@ -22,7 +22,8 @@ public class MyArrayList <T> {
             if (array[array.length - 1] != null) {
               T [] newArray = (T[]) new Object[array.length+1];
               System.arraycopy(array,0, newArray,0, array.length);
-              newArray[array.length-1]=element;
+              newArray[newArray.length-1]=element;
+              array  = newArray;
                 System.out.println(Arrays.toString(newArray));
               break;
             }
